@@ -87,7 +87,7 @@ This process can be seen there:
 <p align=center><img src="src/Dash.png"><p>
 
 Deployed Dashboard can be seen there:
-[Dashboard ](https://abyzou1995-pi02-data10-analytics-aircrashes-dashboard-79frry.streamlit.app)
+[Dashboard ](https://abyzou1995-pi02-data10-analytics-aircrashes-dashboard-z207bh.streamlit.app)
 
 
 
