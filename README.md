@@ -84,10 +84,10 @@ This process can be seen there:
 ## Dashboard
 + Making data available using the Streamlits framework.
 + Streamlist is an unified cloud to build and run all your apps and websites.
-<p align=center><img src="src/Render.png"><p>
+<p align=center><img src="src/Dash.png"><p>
 
 Deployed Dashboard can be seen there:
-[Render API Movie Recommendation System ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
+[Dashboard ](https://abyzou1995-pi02-data10-analytics-aircrashes-dashboard-79frry.streamlit.app)
 
 
 
