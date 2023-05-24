@@ -58,7 +58,6 @@ patsy==0.5.3
 phik==0.12.3
 pickleshare==0.7.5
 Pillow==9.5.0
-platformdirs==3.5.1
 plotly==5.14.1
 prompt-toolkit==3.0.38
 protobuf==3.20.3
@@ -101,7 +100,6 @@ tzdata==2023.3
 tzlocal==5.0.1
 urllib3==1.26.15
 validators==0.20.0
-virtualenv==20.17.0
 visions==0.7.5
 watchdog==3.0.0
 wcwidth==0.2.6
