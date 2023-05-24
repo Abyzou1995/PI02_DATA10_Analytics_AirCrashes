@@ -62,30 +62,32 @@ Dataset after EDA:
       $$Rate=(N° Accidents (N)year-N°Accicents(N-1)Year) /N°Accicents(N-1)Year$$
 
 This process can be seen there:
-[KPIs Analytics ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
+[KPIs Analytics ](https://github.com/Abyzou1995/PI02_DATA10_Analytics_AirCrashes/blob/main/KPI.ipynb)
 
-## Function ML Movie Recommendation System for the API Development
+## Analysis and Conclusions
 
-+ This consists of recommending movies to users based on similar movies, so the score similarity between that movie and the rest of the movies must be found, they will be ordered according to the similarity score and it will return a list with 5 values
 
-Based on research articules, features and ML text-analysis model were chosen.
-1. Features: genres, overview(sample based on Popularity due to an excesive computational cost if whole dataset is used).
-2. TF-IDF (Term Frequency–Inverse Document Frequency) for Natural Language Proccesing ML model using Scikit-learn.
+1. The most accidents occurred in the range of 8-20 hours and this has a relationship to the high number of fatalities that occurred in the same range, the highest number of accidents at 11(6.05%) and the highest number of fatalities at 14(6.06%).
+2. The most accidentes occurred in the range of December to January and this has a not very clear relationship to the high number of fatalities that occurred in the same range, cause the most fatalities ocurred in the range of July to December, but the highest number of fatalities(9.78%) and number of accidents(9.90%) occurred in December.
+3. The most accidents occurred in the range of Tuesday to Saturday and this has a relationship to the high number of fatalities that occurred in the same range, the highest number of accidents on Tuesday(15.19%) and the highest number of fatalities on Wednesday(15.48%).
+4. The most accidents occurred in the range of first days of month and this has a relationship to the high number of fatalities that occurred in the same range, the highest number of accidents on 8th day of month(3.67%) and the highest number of fatalities on 3rd day of month(4.71%).
+5. The most accidents occurred in the range of 1944-2003 year and this has a relationship to the high number of fatalities that occurred in the same range, the highest number of accidents in 1946(88,1.75%) and 1989(83,1.65%) and the highest number of fatalities in 1972(2.50%).
+6. The ground fatalities has a defined trend over the years except 2001 due to attack on the Twin Towers.
+7. The most fatalities(13.03%) and most accidents(20.16%) occurred in The United States of America, followed by Russia and Brazil respectively in both metrics.
+8. The most fatalities(5.06%) and most accidents(7.90%) occurred by Aeroflot operator which is a Russian airline, it would explain why Russia is top 2 in accidents and fatalities; followed by some U.S.A operators which would explain why The United States had most fatalities and accidents.
+9. The most fatalities and accidents occurred by Douglas airplane models like DC-3,C-47,DC-6B,DC-4, etc.
+10. There is a high correlation between the number of passengers and the total number of people on board(100%), this would be explained because the majority of people on board are passengers, and it also has a medium correlation with the total number of fatalities(75%), this would be explained because the greater the number of of people on board there is a greater probability of a greater number of fatalities.
 
-<p align=center><img src="src/EDA2.png"><p>
+<p align=center><img src="src/EDA1.png"><p>
 
-This process can be seen there:
-[Model MLops Movie Recommendation System ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
 
-## Deployment
-+ Making the company data available using the FastAPI framework.
-+ Render is an unified cloud to build and run all your apps and websites.
+## Dashboard
++ Making data available using the Streamlits framework.
++ Streamlist is an unified cloud to build and run all your apps and websites.
 <p align=center><img src="src/Render.png"><p>
 
-Deployed API can be seen there:
+Deployed Dashboard can be seen there:
 [Render API Movie Recommendation System ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
 
-## Video Tutorial
-This video can be seen there:
-[MLops Movie Recommendation System ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
+
 
