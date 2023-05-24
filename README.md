@@ -1,70 +1,68 @@
 <p align=center><img src="src/logo-henry.png"><p>
 
-# <h1 align=center> MLops Project - HENRY DATA SCIENCE <h/>
-## <h2 align=center> Movie Recommendation System <h/>
+# <h1 align=center> Analytics Project - HENRY DATA SCIENCE <h/>
+## <h2 align=center> Airplane Crashes <h/>
 ### <h3 align=center> By Angel Bello Merlo <h/>
 <p align="center">
-<img src="src/Recomendation.jpg"  height=300>
+<img src="src/airplane-crash.jpg"  height=300>
 </p>
 
 ## Topic
 
-You started working as **`Data Scientist`** in a start-up that provides aggregation services for streaming platforms. The world is beautiful and you are going to create your first ML model that solves a business problem: a recommendation system that has not been launched yet!
+Air accidents are unexpected and unwanted events that involve aircraft and cause physical damage to people or to the aircraft itself. A plane crash can involve any type of aircraft, including commercial jets, private jets, helicopters, gliders, and hot air balloons.
 
-You go to their data and you realize that their maturity is low. Nested data, without transformation, there are no automated processes for updating new movies or series, among other things(making your job impossible).
+Air crashes can be caused by a variety of factors, including human error, equipment failure, weather issues, maintenance issues, air traffic management failures, design issues, or manufacturing issues. And as for its consequences, they can be both in terms of human and economic losses.
+
+That's why the aviation industry, regulatory authorities, and researchers work tirelessly to improve aviation safety and prevent future accidents.
+
+For this reason, the analysis of historical air accident data is essential to improve aviation safety. The systematic collection and analysis of crash data can help investigators identify patterns, trends, and contributing factors that could lead to improvements in safety, from helping improve the training of pilots and maintenance personnel, as well as to improve the design and manufacture of aircraft and aviation equipment.
 
 ## ETL process
 Extract, Transform and load process was carried out following these steps.
 
 Original Dataset:
-[Original Dataset ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
-
-### Required Transformations
-+ Some fields, like **`belongs_to_collection`**, **`production_companies`** and others (see data dictionary) are nested, that is, they either have a dictionary or a list as values ​​in each row, you will need to un-nest them to join them to the dataset again do some of the API queries! Or find a way to access that data without un-nesting.
-
-+ Null values ​​of the **`revenue`**, **`budget`** fields must be filled with the number **`0`**.
-  
-+ Null values ​​in the **`release date`** field should be removed.
-
-+ If there are dates, they must have the format **`YYYY-mm-dd`**, they must also create the **`release_year`** column where they will extract the year of the release date.
-
-+ Create the column with the return on investment, called **`return`** with the fields **`revenue`** and **`budget`**, dividing the last two **`revenue / budget`**, when there is no data available to calculate it, it should take the value **`0`**.
-
-+ Remove columns that will not be used, **`video`**,**`imdb_id`**,**`adult`**,**`original_title`**,**`vote_count`**,**`poster_path`** and **`homepage`**.
+[Original Dataset ](https://github.com/Abyzou1995/PI02_DATA10_Analytics_AirCrashes/tree/main/Dataset_original)
 
 This process can be seen there:
-[ETL MLops Movie Recommendation System ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
+[ETL Analytics ](https://github.com/Abyzou1995/PI02_DATA10_Analytics_AirCrashes/blob/main/ETL.ipynb)
 Dataset after ETL:
-[ETL Dataset ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
+[ETL Dataset ](https://github.com/Abyzou1995/PI02_DATA10_Analytics_AirCrashes/tree/main/Dataset_final)
 
 ## EDA 
 Exploratory Data Analysis was carried out following these steps.
 + Cleaning datased done.
 + Use libraries like pandas_profiling, missingno, pandas, matplotlib.
 + Investigate the relationships between the variables of the datasets.
-+ The EDA should include interesting graphs to extract data, such as a word cloud with the most frequent words in movie titles.
++ The EDA should include interesting graphs to extract data.
 + Check if there are outliers or anomalies.
 
-<p align=center><img src="src/EDA3.png"><p>
+<p align=center><img src="src/EDA.png"><p>
 
 This process can be seen there:
-[EDA MLops Movie Recommendation System ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
+[EDA Analytics ](https://github.com/Abyzou1995/PI02_DATA10_Analytics_AirCrashes/blob/main/EDA.ipynb)
 Dataset after EDA:
-[EDA Dataset ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
+[EDA Dataset ](https://github.com/Abyzou1995/PI02_DATA10_Analytics_AirCrashes/tree/main/Dataset_final)
 
-## Functions for the API Development
-Six functions for the endpoints that will be consumed in the API.
-Dataset for functions:
-[Function Datasets](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
-1. The month is given and the function returns the number of movies that were released that month.
-2. The day is given and the function returns the number of movies that were released that day.
-3. The franchise is given, returning the number of movies, total and average profit.
-4. Give a country, returning the number of films produced there.
-5. Give a production company, returning the total profit and the number of movies they produced
-6. Give the movie, returning the investment, the profit, the return and the year in which it was released.
+## KPIs
+
+1. Mortality Rate.
+
+      $$Rate=N° Fatalities/N° Aboard$$
+
+2. Accident Fatality Rate.
+
+      $$Rate=N° Accidents With Fatalities/N° Accidents$$
+
+3. Accident Death Rate.
+
+      $$Rate=N° Accidents With Fatalities/N° Accidents$$
+
+4. Variation Accidents Rate.
+
+      $$Rate=(N° Accidents (N)year-N°Accicents(N-1)Year) /N°Accicents(N-1)Year$$
 
 This process can be seen there:
-[Functions API MLops Movie Recommendation System ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
+[KPIs Analytics ](https://github.com/Marcostamal/PI_MASA_DE/blob/main/Data_Cleaning_Plataformas.ipynb)
 
 ## Function ML Movie Recommendation System for the API Development
 
