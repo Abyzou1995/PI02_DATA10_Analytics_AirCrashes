@@ -1,20 +1,15 @@
 import streamlit as st
+from PIL import Image
 
 
-st.title("Hola aaaaa")
+st.markdown("<h1 style='text-align: center; color: black;'>Analytics Project-HENRY DATA SCIENCE</h1>",
+            unsafe_allow_html=True)
+
 st.markdown("***")
-st.markdown("Holus")
+image = Image.open('src/airplane-crash.jpg')
+st.image(image)
 
-st.sidebar.markdown("")
+st.markdown("<h2 style='text-align: center; color: black;'>By Angel Bello Merlo</h2>",
+            unsafe_allow_html=True)
 
 
-st.write("# This works:")
-
-txt = st.text_area('Text to analyze', '''
-    It was the best of times, it was the worst of times, it was
-    the age of wisdom, it was the age of foolishness, it was
-    the epoch of belief, it was the epoch of incredulity, it
-    was the season of Light, it was the season of Darkness, it
-    was the spring of hope, it was the winter of despair, (...)
-    ''')
-st.write('Sentiment:', (txt))

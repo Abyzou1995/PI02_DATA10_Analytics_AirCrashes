@@ -45,19 +45,19 @@ Dataset after EDA:
 
 ## KPIs
 
-1. Mortality Rate.
+1. Mortality Rate: This KPI describes the rate of number of fatalities over the total number of people aboard.
 
       $$Rate=N° Fatalities/N° Aboard$$
 
-2. Accident Fatality Rate.
+2. Accident Fatality Rate: This KPI describes the rate of number of accidents with at least one fatality over the total number of accidents that occurred.
 
       $$Rate=N° Accidents With Fatalities/N° Accidents$$
 
-3. Accident Death Rate.
+3. Accident Death Rate:This KPI describes the rate of number of accidents with at least one fatality over the total number of accidents that occurred.
 
-      $$Rate=N° Accidents With Fatalities/N° Accidents$$
+      $$Rate=N° Fatalities/N° Accidents$$
 
-4. Variation Accidents Rate.
+4. Variation Accidents Rate:This KPI describes the variation in the number of accidents that occurred in one year compared to the previous one.
 
       $$Rate=(N° Accidents (N)year-N°Accicents(N-1)Year) /N°Accicents(N-1)Year$$
 

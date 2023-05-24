@@ -16,14 +16,15 @@ cf.set_config_file(sharing='public', theme='white', offline=True)
 st.set_page_config(layout="centered")
 
 
-st.title("KPI: ACCIDENT DEATH RATE")
+
+st.markdown("<h1 style='text-align: center; color: black;'>KPI: ACCIDENT DEATH RATE</h1>",
+            unsafe_allow_html=True)
 st.markdown("***")
-st.markdown("Holus")
+st.markdown("This KPI describes the rate of number of fatalities over the total number of accidents that occurred.")
+st.markdown("<h3 style='text-align: center; color: black;'>Rate=N° Fatalities/N° Accidents</h3>",
+            unsafe_allow_html=True)
 
-st.sidebar.markdown("Dashboard")
-
-
-st.write("# This works:")
+st.write("#### Features:")
 
 df = pd.read_csv("Dataset_final/Data.csv", index_col=0)
 if 'btn' not in st.session_state:
@@ -42,7 +43,7 @@ a1, a2, a3 = st.columns((1, 1, 5))
 with a1:
     bu1 = st.button("General", on_click=callback2)
 with a2:
-    b2 = st.button("Paises", on_click=callback1)
+    b2 = st.button("By Country", on_click=callback1)
 with a3:
     st.write("")
 if bu1:
